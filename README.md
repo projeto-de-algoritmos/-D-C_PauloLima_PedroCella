@@ -10,7 +10,7 @@
 | 17/0113060  |  Pedro Vítor de Salles Cella|
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Trabalho focado em desenvolver um programa que verifica o nivel de ordenação de um Array e faz a ordenação do mesmo.   
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
