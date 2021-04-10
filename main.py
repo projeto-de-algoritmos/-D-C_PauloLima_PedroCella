@@ -3,11 +3,13 @@ from utils import pessoa as pe
 
 
 
-perfilList = []
+perfilList = ["Desenvolvedor Web", "Desenvolvedor Mobile", "DevOps", "Scrum Master"]
 
 
-perfilList.append(p.perfil("Front End", [1,2, 3, 5,6,7,8,9,4,10,11,12, 13]))
-perfilList.append(p.perfil("Back End", [1,2,5,3,6,7,8,9,4,10,11,12, 13]))
+perfilList.append(p.perfil("Desenvolvedor Web", [14, 1, 2, 3, 13, 4, 5, 12, 11, 10, 9, 8, 7, 6]))
+perfilList.append(p.perfil("Desenvolvedor Mobile", [12, 1, 13, 12, 2, 3, 11, 10, 9, 8, 7, 6, 4, 5]))
+perfilList.append(p.perfil("DevOps", [1, 2, 14, 13, 12, 11, 10, 3, 9, 4, 8, 5, 7, 6]))
+perfilList.append(p.perfil("Scrum Master", [1, 14, 13, 12, 11, 10, 9, 2, 3, 4, 5, 8, 7, 6]))
 
 print(perfilList)
 with open("perguntas.txt", 'r') as f:
