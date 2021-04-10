@@ -3,7 +3,7 @@ from utils import pessoa as pe
 
 
 
-perfilList = ["Metaleiro", "Rockeiro", "Pagodeiro", "Fã de Samba", "Fã de Sertanejo", "Fã de Eletrônica"]
+perfilList = []
 
 
 perfilList.append(p.perfil("Metaleiro", [7, 19, 8, 25, 31, 21, 26, 13, 14, 9, 26, 1, 22, 15, 10, 27, 2, 16, 23, 3, 32, 33, 4, 11, 28, 5, 24, 34, 29, 12, 35, 17, 6, 36, 18, 30]))
@@ -14,7 +14,7 @@ perfilList.append(p.perfil("Fã de Sertanejo", [25, 1, 26, 7, 2, 3, 8, 19, 20, 2
 perfilList.append(p.perfil("Fã de Eletrônica", [7, 8, 9, 10, 11, 12, 13, 1, 2, 14, 15, 16, 17, 3, 18, 19, 20, 4, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 5, 34, 35, 6, 36]))
 
 print(perfilList)
-with open("perguntas.txt", 'r') as f:
+with open("musicas.txt", 'r') as f:
   Lines = f.readlines(  )
   totalLines = len(Lines)
 
