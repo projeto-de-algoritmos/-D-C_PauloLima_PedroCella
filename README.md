@@ -1,6 +1,6 @@
 # NomedoProjeto
 
-**Número da Lista**: 1<br>
+**Número da Lista**: 4<br>
 **Conteúdo da Disciplina**: D&C<br>
 
 ## Alunos
@@ -10,19 +10,27 @@
 | 17/0113060  |  Pedro Vítor de Salles Cella|
 
 ## Sobre 
-Trabalho focado em desenvolver um programa que verifica o nivel de ordenação de um Array e faz a ordenação do mesmo.   
+Trabalho focado em desenvolver um programa que utiliza das inversões para poder descobrir, qual o possivel gosto musical da pessoa, dentro dos perfis musicais cadastrados.   
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![](./docs/images/Img1.png)
 
+![](./docs/images/Img2.png)
+
+![](./docs/images/Img3.png)
 ## Instalação 
 **Linguagem**: Python<br>
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Caso queira fazer todo o processo de colocar no rank cada musica, digite apenas:
+``` bash
+  python3 main
+```
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Caso queira somente ver o resultado final:
+``` bash
+  python3 main < input.txt
+```
 
 
 

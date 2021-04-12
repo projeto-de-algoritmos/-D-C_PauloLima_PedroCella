@@ -9,6 +9,9 @@ class pessoa:
     self.perfis = []
 
   def appendInRank(self, valor:int):
+    """
+    Adiciona um novo valor no rank de musicas.
+    """
     if valor in self.rank:
       return ValueError
 
@@ -16,23 +19,29 @@ class pessoa:
 
 
   def checkPerfil(self, perfil: p.perfil):
+    """
+    Faz o check do rank feito pela pessoa, e o perfil, que for passado.
+    """
 
-    if len(self.perfis):
-      perfilRank = perfil.rank.copy()
-      myRankcp = self.rank.copy()
-      lastPerfilRank = self.perfis[-1].rank.copy()
+    # Copias dos ranks para que não tenha um ordenamento do rank.
+    perfilRank = perfil.rank.copy()
+    myRankcp = self.rank.copy()
 
-      lastInversao = inverMerge.inversoes(myRankcp + lastPerfilRank, len(lastPerfilRank) + len(myRankcp))
-      currInversao = inverMerge.inversoes(myRankcp + perfilRank,     len(perfilRank)     + len(myRankcp))
-      print(lastInversao, currInversao)
-      
-      if currInversao == lastInversao:
-          self.perfis.append(perfil)
-      
-      elif currInversao < lastInversao:
-        self.perfis = [perfil]
+    # Inversões.
+    perfilInversao = inverMerge.inversoes(perfilRank.copy(), len(perfilRank))
+    myRankInversao = inverMerge.inversoes(myRankcp.copy(), len(myRankcp))
 
-    else:
-      self.perfis = [perfil]
+    myRankcp.sort()
+    perfilRank.sort()
+    
+    perfilAndMyInversoes = inverMerge.inversoes(myRankcp + perfilRank, len(perfilRank) + len(myRankcp))
 
+    # A inversão entre A e B, decidimos fazer sendo resultante de: inversoes([A, B]) - (inversoes(A) + inversoes(B))
+    totalInversoes = perfilAndMyInversoes - (perfilInversao + myRankInversao)
+
+    self.perfis.append((perfil, totalInversoes))
+
+    self.perfis.sort(key=lambda x: x[1]) # Ordenamento da menor quantidade de inversões
+
+    # print(self.perfis)
     
