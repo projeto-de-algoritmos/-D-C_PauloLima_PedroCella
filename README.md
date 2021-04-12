@@ -10,7 +10,9 @@
 | 17/0113060  |  Pedro Vítor de Salles Cella|
 
 ## Sobre 
-Trabalho focado em desenvolver um programa que utiliza das inversões para poder descobrir, qual o possivel gosto musical da pessoa, dentro dos perfis musicais cadastrados.   
+Trabalho focado em desenvolver um programa que utiliza das inversões para poder descobrir, qual o possivel gosto musical da pessoa, dentro dos perfis musicais cadastrados.
+<br>
+[Playlist do spotify com as musicas](https://open.spotify.com/playlist/7IgnJCnLnhLo1DkkNOIoXN?si=ONRT-T0CSaWb00jOpoLjEw&nd=1)
 
 ## Screenshots
 ![](./docs/images/Img1.png)
