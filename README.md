@@ -1,4 +1,4 @@
-# NomedoProjeto
+# GG - Great Guess
 
 **Número da Lista**: 1<br>
 **Conteúdo da Disciplina**: D&C<br>
